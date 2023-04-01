@@ -187,7 +187,7 @@ body {
     padding: 10px 20px;
     background-color: var(--secondary-dark-color);
     font-weight: 800;
-    font-size: 18px;
+    font-size: 20px;
     line-height: calc(18/14);
     letter-spacing: -0.02em;
 }
@@ -210,8 +210,8 @@ body {
 }
 .menu-mobile.link {
     color: var(--primary-background-light-color);
-    font-weight: 800;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 18px;
     transition: var(--transition);
 }
 .menu-mobile.link:hover,
