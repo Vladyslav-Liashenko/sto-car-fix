@@ -25,7 +25,7 @@
 }
 /* container */
 .container {
-    max-width: 425px;
+    max-width: 768px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 0;
@@ -187,7 +187,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: var(--primary-dark-color);
+    background-color: var(--secondary-dark-color);
     font-weight: 800;
     font-size: 20px;
     line-height: calc(18/14);
@@ -204,7 +204,7 @@ body {
     color: var(--orange-background);
 }
 .header-burger {
-    background-color: var(--primary-dark-color);
+    background-color: var(--secondary-dark-color);
     border: none;
 }
 .menu-mobile-list-link{
@@ -215,11 +215,10 @@ body {
 }
 .list.menu-mobile-social{
     display: flex;
+    gap: 15px;
     justify-content: space-between;
 }
-.mobil-menu.js-menu-container
-/* .mobil-menu.js-menu-container.is-open  */
-{
+.mobil-menu {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -227,16 +226,42 @@ body {
     top: 0;
     bottom: 0;
     right: 0;
-    /* transform: translate(100%);
-    transition: transform 1s; */
-    width: calc(220px + (290 - 220) * ((100vw - 375px) / (768 - 375)));
-    height: 100%;
-    padding-left: 30px;
-    padding-top: 55px;
-    padding-right: 30px;
-    padding-bottom: 15px;
-    z-index: 10;
-    overflow-y: scroll;
-    background: #1E1823;
-    gap: 15px;
+    margin-top: 55px;
+    padding: 15px 15px 15px 15px;
+    background-color: var(--secondary-dark-color);
+    transform: translateX(100%);
+    transition: transform 1s;
+}
+@media (min-width: 1200px) {
+    .mobil-menu {
+        display: none;
+    }
+}
+.mobil-menu.is-open {
+    transform: translateX(0);
+}
+.js-close-menu {
+    position: absolute;
+    top: calc(28px + (33 - 28) * ((100vw - 375px) / (768 - 375)));
+    right: calc(28px + (41 - 28) * ((100vw - 375px) / (768 - 375)));
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+}
+.js-close-menu {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: calc(28px + (33 - 28) * ((100vw - 375px) / (768 - 375)));
+    right: calc(28px + (41 - 28) * ((100vw - 375px) / (768 - 375)));
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E1823;
+    transition: background-color var(--transition), fill var(--transition);
 }
