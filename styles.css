@@ -142,8 +142,6 @@ body {
     color: var(--primary-text-light-color);
 }
 
-
-
 .main-btn:hover,
 .main-btn:focus {
     color: var(--orange-background);
@@ -189,7 +187,7 @@ body {
     padding: 10px 20px;
     background-color: var(--secondary-dark-color);
     font-weight: 800;
-    font-size: 20px;
+    font-size: 18px;
     line-height: calc(18/14);
     letter-spacing: -0.02em;
 }
@@ -212,6 +210,8 @@ body {
 }
 .menu-mobile.link {
     color: var(--primary-background-light-color);
+    font-weight: 800;
+    font-size: 20px;
     transition: var(--transition);
 }
 .menu-mobile.link:hover,
