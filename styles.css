@@ -212,6 +212,11 @@ body {
 }
 .menu-mobile.link {
     color: var(--primary-background-light-color);
+    transition: var(--transition);
+}
+.menu-mobile.link:hover,
+.menu-mobile.link:focus {
+    color: var(--orange-background);
 }
 .list.menu-mobile-social{
     display: flex;
@@ -226,8 +231,8 @@ body {
     top: 0;
     bottom: 0;
     right: 0;
-    margin-top: 50px;
-    padding: 15px 15px 15px 15px;
+    margin-top: 0px;
+    padding: 55px 15px 15px 15px;
     background-color: var(--secondary-dark-color);
     transform: translateX(100%);
     transition: transform 1s;
@@ -242,8 +247,8 @@ body {
 }
 .js-close-menu {
     position: absolute;
-    top: calc(28px + (33 - 28) * ((100vw - 375px) / (768 - 375)));
-    right: calc(28px + (41 - 28) * ((100vw - 375px) / (768 - 375)));
+    top: 0;
+    right: 0;
     padding: 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
@@ -252,11 +257,11 @@ body {
     gap: 40px;
 }
 .js-close-menu {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     position: absolute;
-    top: calc(28px + (33 - 28) * ((100vw - 375px) / (768 - 375)));
-    right: calc(28px + (41 - 28) * ((100vw - 375px) / (768 - 375)));
+    top: 15px;
+    right: 30px;
     padding: 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
     display: flex;
@@ -264,4 +269,7 @@ body {
     align-items: center;
     background-color: #1E1823;
     transition: background-color var(--transition), fill var(--transition);
+}
+.close-btn {
+    padding: 5px;
 }
