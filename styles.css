@@ -25,7 +25,6 @@
 }
 /* container */
 .container {
-    max-width: 768px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 0;
@@ -35,7 +34,6 @@
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 768px;
         padding-left: 32px;
         padding-right: 32px;
     }
@@ -181,6 +179,7 @@ body {
 /*  */
 /* header mobile*/
 .header-container-mobile {
+    min-height: 55px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -191,11 +190,8 @@ body {
     line-height: calc(18/14);
     letter-spacing: -0.02em;
 }
-.menu-logo {
-    width: 100%;
-    height: 100%;
-}
 .header-logo.link {
+    display: flex;
     color: var(--primary-text-light-color);
 }
 .logo-header {
@@ -222,6 +218,7 @@ body {
     display: flex;
     gap: 15px;
     justify-content: space-between;
+    align-items: center;
 }
 .mobil-menu {
     display: flex;
@@ -237,9 +234,69 @@ body {
     transform: translateX(100%);
     transition: transform 1s;
 }
+.menu-list-link {
+    display: none;
+}
+.menu-icon-pc {
+    display: none;
+}
+.header-address-li {
+    font-size: 16px;
+}
+.header-address {
+    color: var(--primary-text-light-color);
+}
+.header-address-mobile {
+    margin-bottom: 15px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .mobil-menu {
+        display: none;
+    }
+    .header-burger {
+        display: none;
+    }
+    .menu-list-link {
+        display: block;
+    }
+    .menu-logo {
+        display: flex;
+        gap: 15px;
+    }
+    .nav-header {
+        display: flex;
+        gap: 40px;
+    }
+    .menu-icon {
+        display: flex;
+    }
+    .menu-icon-pc {
+        display: flex;
+    }
+}
 @media (min-width: 1200px) {
     .mobil-menu {
         display: none;
+    }
+    .header-burger {
+        display: none;
+    }
+    .menu-list-link {
+        display: block;
+    }
+    .menu-logo {
+        display: flex;
+        gap: 15px;
+    }
+    .nav-header {
+        display: flex;
+        gap: 40px;
+    }
+    .menu-icon {
+        display: flex;
+    }
+    .menu-icon-pc {
+        display: flex;
     }
 }
 .mobil-menu.is-open {
