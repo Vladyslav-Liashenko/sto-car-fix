@@ -302,6 +302,7 @@ body {
 }
 .mobil-menu.is-open {
     transform: translateX(0);
+    z-index: 1;
 }
 .js-close-menu {
     position: absolute;
