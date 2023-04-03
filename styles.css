@@ -400,7 +400,7 @@ body {
 @media (min-width: 1200px) {  
     
 }
-/*HERO secrion */
+/*HERO section */
 
 .container-hero{
     margin: 0px auto;
@@ -414,4 +414,45 @@ body {
 .img-car {
     height: 100%;
     width: 100%;
+}
+/* Price section */
+.service-description {
+    margin-top: 8px;
+    display: none;
+    width: 100%;
+    overflow: hidden;
+}
+
+.service-description.show {
+    display: flex;
+    justify-content: space-between;
+}
+.service {
+    background-color: var(--secondary-dark-color);
+    color: #FCF1E0;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.service:hover {
+    background-color: #FD9222;
+    cursor: pointer;
+}
+.service:active {
+    background-color: #FD9222;
+    cursor: pointer;
+}
+
+.service:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px #FD9222;
+}
+.description-p {
+    width: 80%;
+    float: left;
+}
+.price-p {
+    margin-left: 8px;
+    width: 20%;
+    float: right;
 }

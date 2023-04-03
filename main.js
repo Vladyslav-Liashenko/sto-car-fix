@@ -21,3 +21,20 @@
       );
 })();
 //   
+// price section
+
+window.addEventListener('load', function() {
+  // Получаем все заголовки
+  var titles = document.querySelectorAll('.service-title');
+
+  // Добавляем обработчик клика для каждого заголовка
+  for (var i = 0; i < titles.length; i++) {
+    titles[i].addEventListener('click', function() {
+      // Находим следующий элемент после заголовка
+      var description = this.nextElementSibling;
+
+      // Переключаем класс "show" для элемента с описанием услуги
+      description.classList.toggle('show');
+    });
+  }
+});
