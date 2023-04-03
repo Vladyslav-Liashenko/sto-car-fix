@@ -385,13 +385,14 @@ body {
 .footer-p {
     margin-top: 16px;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px){
     .footer-block-info {
         display: flex;
         gap: 30px;
     }
 }
 @media (min-width: 1200px) {  
+    
 }
 /*HERO secrion */
 
