@@ -102,7 +102,7 @@ body {
     line-height: calc(18/14);
     letter-spacing: -0.02em;
     color: var(--primary-dark-color);
-    background-color: var(--primary-background-light-color);
+    background-color: var(--secondary-dark-color);
 }
 
 .title {
@@ -332,10 +332,8 @@ body {
     padding: 5px;
 }
 /* footer */
-.footer {
-}
 .container-footer {
-    padding: 30px 16px;
+    padding: 30px 32px;
     background-color: var(--secondary-dark-color);
 }
 .footer-logo.link{
@@ -416,6 +414,15 @@ body {
     width: 100%;
 }
 /* Price section */
+.h2-price-menu{
+    color: var(--orange-background);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: calc(18/14);
+    letter-spacing: -0.02em;
+    text-align: center;
+    padding: 12px 0px;
+}
 .service-description {
     margin-top: 8px;
     display: none;
@@ -437,6 +444,7 @@ body {
 .service:hover {
     background-color: #FD9222;
     cursor: pointer;
+    padding: 16px 8px;
 }
 .service:active {
     background-color: #FD9222;
@@ -446,6 +454,7 @@ body {
 .service:focus {
     outline: none;
     box-shadow: 0 0 0 3px #FD9222;
+    padding: 16px 8px;
 }
 .description-p {
     width: 80%;
