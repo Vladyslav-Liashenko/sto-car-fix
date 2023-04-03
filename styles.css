@@ -251,7 +251,7 @@ body {
 .header-address-mobile {
     margin-bottom: 16px;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px){
     .mobil-menu {
         display: none;
     }
@@ -277,28 +277,11 @@ body {
     }
 }
 @media (min-width: 1200px) {
-    .mobil-menu {
-        display: none;
-    }
-    .header-burger {
-        display: none;
-    }
-    .menu-list-link {
-        display: block;
-    }
     .menu-logo {
-        display: flex;
         gap: 16px;
     }
     .nav-header {
-        display: flex;
         gap: 40px;
-    }
-    .menu-icon {
-        display: flex;
-    }
-    .menu-icon-pc {
-        display: flex;
     }
 }
 .mobil-menu.is-open {
@@ -464,4 +447,10 @@ body {
     margin-left: 8px;
     width: 20%;
     float: right;
+}
+/* map */
+.map-iframe {
+    width: 100%;
+    height: 80%;
+    margin-top: 16px;
 }
