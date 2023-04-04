@@ -336,6 +336,7 @@ body {
     color: var(--orange-background);
 }
 .email {
+    margin-top: 8px;
     color: var(--primary-text-light-color);
     transition: color var(--transition);
 }
@@ -354,6 +355,7 @@ body {
     flex-direction: column;
 }
 .foot-social {
+    margin-top: 16px;
     display: flex;
     gap: 16px;
 }
@@ -435,6 +437,9 @@ body {
     float: right;
 }
 /* map */
+.map {
+    padding: 20px 0px;
+}
 .map-iframe {
     width: 100%;
     height: 80%;
