@@ -6,7 +6,6 @@
     --secondary-dark-color: #1E1823;
     --orange-background: #FD9222;
     --pressed-state-orange: #FCF1E0;
-
     --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*  */
@@ -124,40 +123,32 @@ body {
     padding-bottom: 12px;
     padding-right: 28px;
     padding-left: 28px;
-
     border-radius: 100px;
     background-color: var(--orange-background);
-
     border: none;
-
     font-weight: 600;
     line-height: calc(17 / 14);
     color: var(--primary-text-light-color);
     transition: var(--transition);
 }
-
 .modal-btn {
     background-color: var(--orange-background);
     color: var(--primary-text-light-color);
 }
-
 .main-btn:hover,
 .main-btn:focus {
     color: var(--orange-background);
 
     background-color: var(--pressed-state-orange);
 }
-
 .section {
     padding-bottom: 72px;
 }
-
 @media screen and (min-width: 768px) {
     .title {
         font-size: 24px;
         line-height: calc(28 / 24);
     }
-
     .main-btn {
         padding-top: 14px;
         padding-bottom: 14px;
@@ -166,7 +157,6 @@ body {
 
         line-height: calc(22 / 18);
     }
-
     .section {
         padding-bottom: 100px;
     }
@@ -379,11 +369,7 @@ body {
         gap: 30px;
     }
 }
-@media (min-width: 1200px) {  
-    
-}
 /*HERO section */
-
 .container-hero{
     margin: 0px auto;
     padding: 0%;
@@ -425,31 +411,19 @@ body {
     border-radius: 5px;
 }
 .service:hover {
-    background-color: #FD9222;
+    background-color: var(--orange-background);
     cursor: pointer;
 }
 .service:active {
-    background-color: #FD9222;
+    background-color: var(--orange-background);
     cursor: pointer;
 }
-
 .service:focus {
     outline: none;
-    box-shadow: 0 0 0 3px #FD9222;
+    box-shadow: 0 0 0 3px var(--orange-background);
 }
 .service-title{
     border-radius: 5px;
-}
-.service-title:hover {
-    background-color: #FD9222;
-    cursor: pointer;
-}
-
-.service-title:active {
-    background-color: #FD9222;
-    cursor: pointer;
-}
-.service-title:focus {
 }
 .description-p {
     width: 80%;
