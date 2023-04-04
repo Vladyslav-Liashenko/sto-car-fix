@@ -409,27 +409,24 @@ body {
     padding: 12px 0px;
 }
 .service-description {
-    margin-top: 8px;
     display: none;
     width: 100%;
     overflow: hidden;
 }
-
 .service-description.show {
+    padding: 8px 0px;
     display: flex;
     justify-content: space-between;
 }
 .service {
+    padding: 8px;
     background-color: var(--secondary-dark-color);
     color: #FCF1E0;
-    padding: 8px;
     border-radius: 5px;
 }
-
 .service:hover {
     background-color: #FD9222;
     cursor: pointer;
-    padding: 16px 8px;
 }
 .service:active {
     background-color: #FD9222;
@@ -439,7 +436,20 @@ body {
 .service:focus {
     outline: none;
     box-shadow: 0 0 0 3px #FD9222;
-    padding: 16px 8px;
+}
+.service-title{
+    border-radius: 5px;
+}
+.service-title:hover {
+    background-color: #FD9222;
+    cursor: pointer;
+}
+
+.service-title:active {
+    background-color: #FD9222;
+    cursor: pointer;
+}
+.service-title:focus {
 }
 .description-p {
     width: 80%;
