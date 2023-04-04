@@ -394,6 +394,7 @@ body {
     min-height: 100%;
 }
 .img-car {
+    z-index: 0;
     height: 100%;
     width: 100%;
 }
