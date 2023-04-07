@@ -237,10 +237,21 @@ body {
     font-size: 16px;
 }
 .header-address {
+    display: flex;
+    flex-direction: column;
     color: var(--primary-text-light-color);
+}
+@media (min-width: 900px) {
+    .header-address {
+        gap: 16px;
+        flex-direction: row;
+    }
 }
 .header-address-mobile {
     margin-bottom: 16px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
 }
 @media (min-width: 768px){
     .mobil-menu {
